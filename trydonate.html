@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Donate</title>
+
+	<style>
+		body{
+
+  background-image:url(lata.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding:0;
+	font-family:Arial;
+}
+.login{
+     margin:auto;
+     width:250px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+     padding: 80px 40px;
+     margin-top: 50px;
+     background: linear-gradient(top,  #3c3c3c 0%,   #222222  100%);
+     background:-webkit-linear-gradient(top,  #3c3c3c 0%,   #222222  100%);
+
+}
+
+  input{
+     width: 100%;
+     margin-bottom: 30px;
+  }
+   input[type=userid], input[type=password]{
+    border:none;
+    outline:none;
+    border: 2px #fff dotted;
+    background:transparent;
+    border-radius:20px;
+    box-sizing:border-box;
+    color: #fff;
+    font-size:16px;
+    padding:10px;
+    text-align:center;
+
+  }
+
+h2{
+
+     margin: 0 0 30px 0;
+     padding: 10px;
+     color:#efed40;
+     text-align:center;
+  }
+
+	</style>
+
+</head>
+<body>
+
+	<div class="login">
+		
+		<h1>Donate Not Complete <br /> Try Again </h1>
+
+<form action="donate.php" method="post">
+
+
+
+title: <input type="title" name="title">
+<br><br>
+
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+
+<br><br>
+isbn: <input type="isbn" name="isbn">
+<br><br>
+edition: <input type="edition" name="edition">
+<br><br>
+writter_name: <input type="writter_name" name="writter_name">
+<br><br>
+date: <input type="date" name="date">
+<br><br>
+price: <input type="price" name="price">
+<br><br>
+
+
+
+
+<input type="submit" name="submit" value="submit">
+
+</form>
+	</div>
+
+
+
+</body>
+</html>>
